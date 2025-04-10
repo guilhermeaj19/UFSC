@@ -1,0 +1,64 @@
+PRIMEIRA TAREFA - A PRIMEIRA TAREFA DO ARTIGO DEVE SER POSTADA NO MOODLE ATÉ "06/09/2023" E SER APRESENTADA, SE SOLICITADO PELO PROFESSOR ATÉ "06/10/2023".
+
+Os alunos devem enviar, via moodle, a primeira tarefa relacionada com o artigo, considerando temas no estado da arte relacionados com REDES DE COMPUTADORES. Para evitar problemas consulte previamente o professor para verificar se o tema escolhido está apropriado (correto).
+
+Cada item (seção) do artigo deverá apresentar um texto de no mínimo 1/2 página A4, usando times roman 12, em uma coluna.
+
+------------------------
+Baseando-se nos exemplos dos artigos disponibilizados no moodle e pelos links indicados abaixo APRESENTE A ESTRUTURA COMPLETA DO SEU ARTIGO, escrevendo um texto sucinto para cada item do artigo. Exemplo de estrutura:
+
+A PRIMEIRA TAREFA DO ARTIGO
+Título.
+Resumo.
+1. Introdução: 1.1.Motivação e Justificativas, 1.2.Objetivos (Gerais e Específicos), 1.3.Organização do Artigo.
+2. Conceitos básicos: 2.1 Primeiro conceito básico. 2.2 Seguando conceito básico.
+3. Trabalhos Correlatos: 3.1 Primeiro trabalho correlato. 3.2 Segundo trabalho correlato.
+4. Aspectos relevantes.
+5. Problemas existentes.
+6. Soluções Possíveis.
+Referências Bibliográficas.
+
+A SEGUNDA TAREFA DO ARTIGO
+7. Projeto e Desenvolvimento de uma Proposta.
+8. Conclusões e Trabalhos Futuros.
+Referências Bibliográficas.
+
+----------------------------
+Título: Título escolhido.
+Resumo: Descrição sucinta sobre o que pretende-se apresentar no artigo.
+
+Na seção de "Introdução" o aluno deverá escrever sobre a justificativa e motivação da escolha deste tema (indicar referência bibliográfica no texto), objetivos gerais (pequeno parágrafo) e específicos (lista de tópicos) do artigo e a organização do artigo.
+
+Na seção de Conceitos básicos: Apresentar sucintamente dois os conceitos básicos relacionados com o tema do artigo.
+
+Na seção de "Trabalhos Correlatos" o aluno deverá mostrar em uma tabela os resultados da "revisão bibliográfica sistemática", comentando os resultados que aparecem na tabela) e também devem comentar sucintamente sobre o conteúdo de DUAS referências (UMA publicada em 2022 e UMA publicada em 2023) . OS TRABALHOS CORRELATOS DEVEM TER SIDO PUBLICADOS EM PERIÓDICOS E/OU EVENTOS (CONFERÊNCIAS), SENDO APROVADOS POR AVALIADORES.
+
+Referências Bibliográficas: Apresentar no mínimo 5 referências bibliográficas de trabalhos correlatos (UMA publicada em 2022 e QUATRO publicadas em 2023) em que se basearam para escolher o tema do artigo. Cada referência bibliográfica deverá apresentar nesta ordem: nomes dos autores; título da publicação; onde a publicação foi realizada (nome da conferência ou periódico) e data de publicação.
+
+------------------------------------
+Para obter as referências bibliográficas faça buscas em:
+- https://scholar.google.com
+- https://ieeexplore.ieee.org/Xplore/home.jsp
+- https://dl.acm.org
+- https://www.elsevier.com
+- https://link.springer.com
+- https://www.researchgate.net
+
+Links para achar sugestões de temas para o artigo:
+http://www.cnsm-conf.org/2023/cfp.html
+https://noms2024.ieee-noms.org/authors/call-technical-session-papers
+https://www.comsnets.org/call_for_papers.html
+
+Pretendemos trabalhar a nível de "survey" conforme aparecem nos primeiros links abaixo. Também observem exemplos de artigos completos nos outros links abaixo. Outros artigos podem ser observados em https://lrg.ufsc.br
+Exemplos de "surveys":
+https://www.researchgate.net/publication/361850362
+https://www.researchgate.net/publication/346970841
+https://www.researchgate.net/publication/342727738
+https://www.researchgate.net/publication/316116828
+Exemplos de artigos completos:
+https://www.researchgate.net/publication/358116647
+https://www.researchgate.net/publication/352493943
+https://www.researchgate.net/publication/336835144
+https://www.researchgate.net/publication/337473335
+https://www.researchgate.net/publication/328964029
+https://www.researchgate.net/publication/332350270

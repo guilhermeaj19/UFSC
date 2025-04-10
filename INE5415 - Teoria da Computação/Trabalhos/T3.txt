@@ -1,0 +1,16 @@
+Conforme vimos em sala, um problema NP-Completo é um problema que (i) está em NP
+e (ii) todo problema Π pertencente a NP pode ser reduzido a ele em tempo polinomial. Também vimos que o problema da Satisfação Booleana (SAT) foi o primeiro problema a ser de demonstrado NP-Completo. Há na literatura uma série de outros problemas provados NP-Completos. Em geral, a prova desta asserção consiste na redução de um problema reconhecidamente NP-Completo ao que se quer demonstrar.
+
+Este trabalho  deve ser realizado em duplas e consiste na pesquisa e apresentação em sala (de 10 a 12 min.) da prova da NP-Completude de algum problema. Uma lista de problemas possíveis pode ser encontrada aqui.
+
+A apresentação deve compreender os seguintes itens:
+
+	- Apresentação e exemplificação dos problemas, fonte e alvo, envolvidos na redução.
+	- Apresentação de prova (de forma didática, ou seja, com detalhes e construção de um exemplo simples, porém completo) de que o problema alvo pertence a classe dos NP-Completos.
+	- Referências Bibliográficas e sites utilizados
+
+Postem aqui o nome dos integrantes da dupla e os problemas envolvidos 
+
+Problema origem -> Problema destino. (Obrigatório!)
+
+Antes de postar, verifique apenas se essa redução já não foi escolhida por alguma outra equipe.

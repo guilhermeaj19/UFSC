@@ -1,0 +1,22 @@
+Se for solicitado pelo professor, será agendada a data e horário da apresentação, usando o endereço de email disponibilizado no moodle. Postar no moodle o relatório completo e os arquivos do wireshark até 17/10/2023.
+
+Escolher uma ferramenta de gerência de redes, por exemplo, PRTG, Zabix, Zenoss, Nagios, WhatsUp, Cacti... e instalar a mesma, instalar agentes em algumas máquinas (ou usar agentes instalados em switches, hubs, modems...), se necessário, e obter o valor de algumas variáveis (objetos gerenciados), no mínimo 4 variáveis (exemplo: taxa de transmissão de interface de rede (obrigatório), número pacotes de entrada e saída, tempo de resposta, informações sobre conexões estabelecidas...) que devem ser observadas, no mínimo, durante 2 dias (com possíveis interrupções, NO MÍNIMO monitorando continuamente durante duas horas por dia). Nos gráficos devem aparecer as datas em que a medições foram realizadas.
+
+Fazer um relatório, comentando sobre a ferramenta de gerência usada e descrevendo as características dos objetos gerenciados monitorados para explicar e interpretar os resultados obtidos (ou seja as medições realizadas). Para cada gráfico apresentado devem ser realizados os respectivos comentários, explicando os resultados obtidos. No relatório também deve ser aprasentada a topologia da rede, monstrando a posição dos recursos e/ou serviços que foram gerenciados (monitorados), indicando o local em que foram realizadas as medições. Apresentar também, na topologia, o endereço de rede (IP) de cada dispositivo conectado na rede.
+
+Instalar o "wireshark", disponível em http://www.wireshark.org, para capturar pacotes, identificando e comentando sobre a ocorrência do protocolo ARP (Address Resolution Protocol).
+
+Os alunos também deverão utilizar o "wireshark" para identificar a ocorrência de conexão TCP, transferências de dados HTTP, encerramento de conexão TCP e uso do UDP. Nestas telas capturadas pelo "wireshark" os alunos deverão identificar os "pacotes" relacionados com criação da conexão, a transferência de dados e a liberação de conexões. Incluir também no relatório a descrição destas atividades. Os arquivos de dados analisados e obtidos atráves do "wireshark" também devem ser entregues junto (anexados) com o relatório. Os alunos também deverão apresentar um arquivo de dados, mostrando a ocorrência de segmentos UDP, apresentando a figura com os segmentos obtidos no relatório e explicando sobre a ocorrência dos segmentos.
+
+ESTRUTURA DO RELATÓRIO:
+-Título.
+-Resumo.
+-Índice (sumário).
+-Introdução.
+-Apresentação da ferramente de Gerência de Redes escolhida.
+-Apresentação da topologia da rede escolhida (mostrar IP dos dispositivos)
+-Descrição de todos componentes da rede de computadores (modems, hubs, switches, computadores, celulares, tablets, televisores, servidores, dispositivos IoT...).
+-Descrição das medições (monitorações) realizadas (mostrar e explicar os gráficos).
+-Descrição do uso do wireshark, mostrando as respectivas telas e anexando os arquivos monitorados e explicar a ocorrência do: ARP, Estabelecimento de Conexão TCP, Transferência de Dados HTTP, Encerramento de Conexão TCP e segmentos UDP.
+-Conclusão.
+-Referências.

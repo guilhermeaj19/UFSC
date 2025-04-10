@@ -1,0 +1,7 @@
+(defun bhaskara (a b c)
+    (list (/ (+ (* -1 b) (sqrt (- (* b b) (* 4 a c)))) (* 2 a)) (/ (- (* -1 b) (sqrt (- (* b b) (* 4 a c)))) (* 2 a)))
+)
+(defun main ()
+    (write-line (write-to-string (bhaskara 1 -15 50)))
+)
+(main)

@@ -1,0 +1,10 @@
+(define (soma list_int)
+    (cond
+        ((null? list_int) 0)
+        (else (+ (car list_int) (soma (cdr list_int))))
+    )
+)
+(define (main)
+    (display (soma '(5 3 1 2 5))) (newline)
+)
+(main)

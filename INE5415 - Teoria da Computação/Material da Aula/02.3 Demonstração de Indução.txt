@@ -1,0 +1,30 @@
+Resolução de \Sum_{i=0}^k i^3 = ((k^2)(k+1)^2)/4 
+
+Assumindo base = 0 e hipótese:
+
+(k)^2(k+1)^2/4 + (k+1)^3 = ((k+1)^2((k+1)+1)^2/4 (assume a hipótese e demonstra que somar o k-ésimo + 1 elemento é equivalente a considerá-lo na hipótese, desenvolvendo em ambos os lados)
+
+(k)^2(k+1)^2/4 + 4(k+1)^3/4 = (k^2+2k+1)(k^2+4k+4)/4 
+
+(k)^2(k+1)^2/4 + 4(k+1)*(k+1)^2/4 = k^4+6k^3+13k^2+12k+4)/4
+
+[k^2.(k^2 + 2k + 1) + (4k +4).(k² + 2k+ 1)]/4 =  k^4+6k^3+13k^2+12k+4)/4
+
+(k^4 + 2k^3 + k² + 4k^3 + 8k^2  + 4k+ 4k^2 + 8k + 4)/4 = k^4+6k^3+13k^2+12k+4)/4
+
+k^4+6k^3+13k^2+12k+4)/4 = k^4+6k^3+13k^2+12k+4)/4. (CQD)
+
+ OU assim:
+Assumindo base =0 e hipótese
+
+ k^2(k+1)^2/4 + (k+1)^3 (soma (k+1)^3 para gerar o próximo elemento)
+
+(k^2(k+1)^2 + 4(k+1)^3 )4 (tira o MMC)
+
+(k^2(k+1)^2 + (k+1)^2(k+1).4)/4) (separa (k+1)^3 em (k+1)^2.(k+1))
+
+[(k+1)^2.k^2 + 4(k+1)]/4 (coloca (k+1)^2 em evidência)
+
+[(k+1)^2.(k+2)^2]/4 (sabendo que k^2 + 4K + 4 = (k+2)^2)
+
+Isso é equivalente a somar mais 1 na hipótese, demostrando a igualdade.

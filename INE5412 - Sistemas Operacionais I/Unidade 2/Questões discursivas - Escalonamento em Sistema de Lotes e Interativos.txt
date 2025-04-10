@@ -1,0 +1,13 @@
+1. Qual a função de um escalonador?
+
+2. Em quais momentos do ciclo de vida de um processo um escalonador pode ser necessário?
+
+3. Explique a diferença entre um algoritmo de escalonamento preemptivo e não preemptivo.
+
+4. Explique, com auxílio de exemplos, as diferenças entre os algoritmos FCFS e SJF.
+
+5. No algoritmo de escalonamento por alternância circular, quais são as vantagens e desvantagens de se utilizar um quantum grande e pequeno?
+
+6. Explique como evitar o problema da postergação indefinida no algoritmo de prioridade com auxílio de um exemplo.
+
+7. Cinco jobs estão esperando para serem executados. Seus tempos de execução previstos são 9, 6, 3, 5 e X. Em que ordem eles deveriam ser executados para minimizar o tempo médio de retorno? Justifique sua resposta.

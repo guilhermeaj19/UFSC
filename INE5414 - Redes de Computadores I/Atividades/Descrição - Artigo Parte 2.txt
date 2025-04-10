@@ -1,0 +1,12 @@
+A SEGUNDA TAREFA DO ARTIGO DEVE SER POSTADA NO MOODLE ATÉ A DATA LIMITE (17/10/2023) E SER APRESENTADA PESSOALMENTE AO PROFESSOR, SE SOLICITADO, ATÉ 17/11/2023. CASO CONTRÁRIO RECEBERÁ NOTA 0 (ZERO) .
+
+Seções da SEGUNDA TAREFA DO ARTIGO:
+7. Projeto e Desenvolvimento de uma Proposta.
+8. Conclusões e Trabalhos Futuros.
+Referências Bibliográficas.
+
+Sobre a seção referente a "PROJETO E DESENVOLVIMENTO DE UMA PROPOSTA", deverá ser escrito no mínimo uma página formato A4, usando fonte Times Roman 12. Como referência bibliográfica DEVEM CONSIDERAR UM ARTIGO COMPLETO (ou seja com estudo de caso e resultados finais), indicando este artigo nas Referências Bibliográficas. Este projeto e desenvolvimento deve considerar os aspectos de implementação (simulação e/ou expressões analíticas) da proposta, ou seja, verificação, validação e testes. Que ferramentas foram usadas para validar a proposta? Como foram usadas? Foi apresentada uma arquitetura? Foram apresentados algoritmos? Que resultados numéricos foram obtidos?
+
+Sobre a seção referente a "Conclusões e Trabalhos Futuros", deverá ser escrito no mínimo 1/2 (meia) página formato A4, usando fonte Times Roman 12. Para redigir esta seção observe o conteúdo das referências bibliográficas utilizadas neste artigo que está sendo elaborado.
+
+Na parte referente a "Referências Bibliográficas", bastará fazer aperfeiçoamentos e atualizações, se for necessário.

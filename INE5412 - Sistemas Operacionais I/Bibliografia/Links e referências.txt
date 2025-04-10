@@ -1,0 +1,13 @@
+Linguagem C
+
+	Introdução - Parte 1: https://youtu.be/mjCpOpEkL2g
+	Introdução - Parte 2: https://youtu.be/dXVclK6x1T4
+	Introdução - Parte 3: https://youtu.be/tcwHtw7SAKM
+	Tutorial iterativo sobre C: https://www.learn-c.org/
+	Beej's Guide to C Programming: https://beej.us/guide/bgc/html//index.html
+
+Livros físicos
+
+TANENBAUM, Andrew S. Sistemas operacionais modernos. 3. ed. Rio de Janeiro: Pearson Prentice Hall, 2010. xiii, 653 p. ISBN 9788576052371.
+
+KERNIGHAN, Brian W; RITCHIE, Dennis M. C, a linguagem de programação. 3a ed. Porto Alegre: Campus; Rio de Janeiro: Campus, 1987. 208p. ISBN 8570014104.

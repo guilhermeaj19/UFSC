@@ -1,0 +1,12 @@
+(define (menor list_int)
+    (cond
+        ((null? list_int) 0)
+        ((= (length list_int) 1) (car list_int))
+        ((< (car list_int) (car (cdr list_int))) (menor (cons (car list_int) (cdr (cdr list_int)))))
+        (else (menor (cdr list_int)))
+    )
+)
+(define (main)
+    (display (menor '(-5 4 3 -124214 2 -124)))
+)
+(main)

@@ -1,0 +1,40 @@
+Plano de ensino: https://planos.inf.ufsc.br/modulos/planos/visualizar.php?id=4417
+
+Playlist: https://youtube.com/playlist?list=PLclgVC78V1aZhM6WkaOGhSHuQPLwAfpVG&si=wufmHqxMh6Ci9X3I
+
+
+Unidade 1
+
+Fundamentos, histórico e arquiteturas de núcleo: https://youtu.be/sstqargsZ2c
+Organização de sistemas computacionais: https://youtu.be/5EKQz4Gtb3A
+
+	Material complementar:
+		A History of Operating Systems: https://www.informit.com/articles/article.aspx?p=24972
+		O que é virtualização?: https://www.redhat.com/pt-br/topics/virtualization/what-is-virtualization
+		Instalando e Executando VMs no Multipass: https://youtu.be/DQKNnTWtR9E
+
+Unidade 2
+
+Fundamentos sobre processos: https://youtu.be/3EYJMv0kfe0
+Fundamentos sobre threads: https://youtu.be/VvOqsigSaAI
+Escalonamento - sistemas em lote e interativos: https://youtu.be/-Eb4OkbhnzQ
+Escalonamento - sistemas de tempo real: https://youtu.be/Dy0Bac4sH4U
+
+Unidade 3
+
+Abstrações de memória - memória física e espaços de endereçamento: https://youtu.be/w6M9PWSyHDA
+Abstrações de memória - memória virtual e paginação: https://youtu.be/zrABVd4CMXU
+Abstrações de memória - segmentação e segmentação com paginação: https://youtu.be/TB19DZBVWRw
+Gerenciamento de memória livre: https://youtu.be/mAFOwmshhVk
+Algoritmos de substituição de páginas: https://youtu.be/mzlaMAV1-wg
+Projeto e implementação de paginação: https://youtu.be/
+
+Unidade 4
+
+Sistemas de arquivos - arquivos e diretórios: https://youtu.be/KBiH9sYiAlc
+Sistemas de arquivos - implementação de arquivos e diretórios: https://youtu.be/BC5bbCaYDzo
+Manipulação de arquivos em C: https://youtu.be/JRgNxTi8qe8
+Sistemas de arquivos - otimização: https://youtu.be/iy9PKQyfshA
+Entrada_Saída - princípios de hardware e software: https://youtu.be/
+Entrada_Saída - discos rígidos: https://youtu.be/VuLXpeEH0xo
+Entrada_Saída - RAID: https://youtu.be/UEcO198dWyY

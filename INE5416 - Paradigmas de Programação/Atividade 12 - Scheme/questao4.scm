@@ -1,0 +1,25 @@
+(define (menor list_int)
+    (cond
+        ((null? list_int) 0)
+        ((= (length list_int) 1) (car list_int))
+        ((< (car list_int) (car (cdr list_int))) (menor (cons (car list_int) (cdr (cdr list_int)))))
+        (else (menor (cdr list_int)))
+    )
+)
+(define (maior list_int)
+    (cond
+        ((null? list_int) 0)
+        ((= (length list_int) 1) (car list_int))
+        ((> (car list_int) (car (cdr list_int))) (maior (cons (car list_int) (cdr (cdr list_int)))))
+        (else (maior (cdr list_int)))
+    )
+)
+
+(define (diferencaMaiorMenor list_int)
+    (- (maior list_int) (menor list_int))
+)
+
+(define (main)
+    (display (diferencaMaiorMenor '(10 5 3 -9 1 5)))
+)
+(main)

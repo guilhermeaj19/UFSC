@@ -1,0 +1,55 @@
+<!-- Created with JFLAP 7.1. -->
+<structure>
+<type>fa</type>
+<automaton>
+<!-- The list of states. -->
+<state id="0" name="q0">
+<x>172.0</x>
+<y>208.0</y>
+<label>mod3=0</label>
+<initial/>
+<final/>
+</state>
+<state id="1" name="q1">
+<x>358.0</x>
+<y>213.0</y>
+<label>mod3=1</label>
+</state>
+<state id="2" name="q2">
+<x>545.0</x>
+<y>211.0</y>
+<label>mod3=2</label>
+</state>
+<!-- The list of transitions. -->
+<transition>
+<from>0</from>
+<to>0</to>
+<read>0</read>
+</transition>
+<transition>
+<from>2</from>
+<to>2</to>
+<read>1</read>
+</transition>
+<transition>
+<from>0</from>
+<to>1</to>
+<read>1</read>
+</transition>
+<transition>
+<from>1</from>
+<to>0</to>
+<read>1</read>
+</transition>
+<transition>
+<from>1</from>
+<to>2</to>
+<read>0</read>
+</transition>
+<transition>
+<from>2</from>
+<to>1</to>
+<read>0</read>
+</transition>
+</automaton>
+</structure>

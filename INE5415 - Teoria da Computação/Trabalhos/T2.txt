@@ -1,0 +1,4 @@
+O trabalho II consiste em revisitar Maquinas de Turing do trabalho I e fazer a análise de complexidade das referidas máquinas. A análise deve ser detalhada: custo linha a linha, custo total e custo final em notação assintótica (consultem o livro "algoritmos" do Cormen ou outros livros que tragam conteúdo similar.
+
+O formato de entrega é um relatório em formato .pdf com os algoritmos
+(descrição do funcionamento das máquinas em alto nível)  e as análises.

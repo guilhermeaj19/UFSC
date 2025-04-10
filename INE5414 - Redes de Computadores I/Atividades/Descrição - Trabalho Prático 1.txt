@@ -1,0 +1,67 @@
+Primeiro trabalho prático
+A TAREFA DO ARTIGO E/OU TRABALHO PRÁTICO QUE NÃO FOR POSTADA NO MOODLE ATÉ A DATA LIMITE, RECEBERÁ NOTA 0 (ZERO) .
+Para agendar a data e horário da apresentação o aluno deverá contactar o professor via endereço de email (carlosbwestphall@gmail.com).
+
+Exemplo 1
+- Nível físico (RS 232C DB25): Considerando a figura da página de número 41 da apostila e a pergunta de número 23 da lista de exercícios, faça uma animação para mostrar a interação entre Terminal Local (DTE-A), Modem Local (DCE-A), Modem Remoto (DCE-B) e Terminal Remoto (DTE-B). A "animação" deve considerar os pinos de números, 2, 3, 4, 5, 6, 8 e 20 da Interface de Comunicação Serial RS232C para um conector de 25 pinos. Veja na página de número 45 da apostila a descrição em inglês dos sinais do RS232 (DB25) mais usados.
+Um exemplo de trabalho realizado pode ser visto no link: http://www.inf.ufsc.br/~westphal/animacaoarrumada.gif
+
+Exemplo 2
+- Os alunos apresentarão uma "animação", mostrando o funcionamento do protocolo Poll/Select (Polling e Selection). A ANIMAÇÃO DEVERÁ SER APRESENTADA ATRAVÉS DE UM VÍDEO COMENTADO VERBALMENTE. Para realizar o trabalho considerarão as informações contidas na apostila da disciplina (figuras das páginas de números 55 e 57). Para cada ação do protocolo de enlace (nivel 2) Poll/Select mostrarão a ocorrência das ações do protocolo de nível físico (nivel 1) do RS232C-DB25. Deverá ser mostrada a ocorrência de erros nas transmissões das mensagens e solicitando retransmissões na parte do polling e do selection (primeiro POLLING e depois SELECTION). Também deverá ser mostrada a ocorrência de INVALID (IGNORE) no POLLING, NO MESSAGE no POLLING e NOT RECEIVED READY (NAK) no SELECTION. Na animação indique a ordem dos computadores, começando pela primeira letra do teu nome. Por exemplo: Carlos deverá indicar os computadores por CC, CD, CE...; João deverá indicar os computadores por CJ, CK, CL..., Adão por CA, CB, CC...
+No caso de "time out" considere que o computador que será "questionado" (quer TRANSMITIR) estará desligado (não reagindo nem para os sinais do RS232-C).
+O Computador Central (que faz os questionamentos relacionados com o polling e o selection) será indicado pela letra C e a primeira letra do seu nome. No exemplo anterior teremos como Computador Central: CC para Carlos, CJ para João e CA para Adão.
+Exemplos de trabalhos realizados podem ser vistos nos links:
+https://www.youtube.com/watch?v=T8nBoCbMN3Q
+
+------------------------------
+Para o semestre de 2023-2, para o dia 06/09/2023, os alunos apresentarão uma "animação", mostrando o funcionamento do protocolo Poll/Select (Polling e Selection). A ANIMAÇÃO DEVERÁ SER APRESENTADA ATRAVÉS DE UM VÍDEO COMENTADO VERBALMENTE. Para realizar o trabalho os alunos considerarão as informações contidas na apostila da disciplina (figuras das páginas de números 55 e 57). Para cada ação do protocolo de enlace (nivel 2) Poll/Select mostrarão a ocorrência das ações do protocolo de nível físico (nivel 1) do RS232C-DB25.
+
+Na animação indique a ordem dos computadores, começando pela primeira letra do teu nome. Por exemplo: Carlos deverá indicar os computadores por CC (computador central), CD (primeiro computador) e CE (segundo computador); João deverá indicar os computadores por CJ (computador central), CK (primeiro computador) e CL (segundo computador). Adão por CA (computador central), CB (primeiro computador) e CC (segundo computador).
+
+Do nome Ana Regina Delazzari até o nome Bernardo Arruda Silveira
+PPRIMEIRO PARA O POLLING (no primeiro computador):
+Deverá ser mostrada a ocorrência do INVALID (IGNORE).
+DEPOIS PARA O SELECTION (no segundo computador):
+Deverá ser mostrada a ocorrência do RECEIVED READY (com erro na transmissão da mensagem e solicitação de retransmissão).
+
+Do nome Clara Rosa Oliveira Gonçalves até o nome Enzo da Rosa Brum
+PPRIMEIRO PARA O POLLING (no primeiro computador):
+Deverá ser mostrada a ocorrência do NO MESSAGE
+DEPOIS PARA O SELECTION (no segundo computador):
+Deverá ser mostrada a ocorrência do RECEIVED READY (com erro na transmissão da mensagem e solicitação de retransmissão).
+
+Do nome Enzo Lemos do Prado Welter até o nome Gabriel Sartori Rangel
+PPRIMEIRO PARA O POLLING (no primeiro computador):
+Deverá ser mostrada a ocorrência do READY TO SEND (com erro na transmissão da mensagem e solicitação de retransmissão).
+DEPOIS PARA O SELECTION (no segundo computador):
+Deverá ser mostrada a ocorrência do INVALID.
+
+Do nome Geovane Martins Schmitz até o nome Gustavo Hideki Guenka Vale
+PPRIMEIRO PARA O POLLING (no primeiro computador):
+Deverá ser mostrada a ocorrência do READY TO SEND (com erro na transmissão da mensagem e solicitação de retransmissão).
+DEPOIS PARA O SELECTION (no segundo computador):
+Deverá ser mostrada a ocorrência do NOT RECEIVE READY.
+
+Do nome Isaque Floriano Beirith até o nome João Pedro Schmidt Cordeiro
+PRIMEIRO PARA O SELECTION (no primeiro computador):
+Deverá ser mostrada a ocorrência do INVALID
+DEPOIS PARA O POLLING (no segundo computador):
+Deverá ser mostrada a ocorrência do READY TO SEND (com erro na transmissão da mensagem e solicitação de retransmissão).
+
+Do nome Julia Macedo de Castro até o nome Maria Fernanda Bittelbrunn Toniasso
+PRIMEIRO PARA O SELECTION (no primeiro computador):
+Deverá ser mostrada a ocorrência do NOT RECEIVE READY
+DEPOIS PARA O POLLING (no segundo computador):
+Deverá ser mostrada a ocorrência do READY TO SEND (com erro na transmissão da mensagem e solicitação de retransmissão).
+
+Do nome Mariana Mazzo Heitor até o nome Otávio Augusto de Santana Jatobá
+PRIMEIRO PARA O SELECTION (no primeiro computador):
+Deverá ser mostrada a ocorrência do RECEIVED READY (com erro na transmissão da mensagem e solicitação de retransmissão).
+DEPOIS PARA O POLLING (no segundo computador):
+Deverá ser mostrada a ocorrência do INVALID
+
+Do nome Roberto Vandresen Neto até o nome William Kraus
+PRIMEIRO PARA O SELECTION (no primeiro computador):
+Deverá ser mostrada a ocorrência do RECEIVED READY (com erro na transmissão da mensagem e solicitação de retransmissão).
+DEPOIS PARA O POLLING (no segundo computador):
+Deverá ser mostrada a ocorrência do NO MESSAGE.

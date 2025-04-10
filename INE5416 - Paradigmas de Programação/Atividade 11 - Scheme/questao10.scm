@@ -1,0 +1,13 @@
+(define (maior a b c)
+    (cond
+        ((and (>= a b) (>= a c)) a)
+        ((and (>= b a) (>= b c)) b)
+        (else c)
+    )
+)
+(define (main)
+    (display (maior 10 5 2)) (newline)
+    (display (maior 1 9 2)) (newline)
+    (display (maior 4 1 142)) (newline)
+)
+(main)

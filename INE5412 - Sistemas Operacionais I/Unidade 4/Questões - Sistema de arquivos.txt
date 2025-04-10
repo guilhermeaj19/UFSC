@@ -1,0 +1,25 @@
+1. Quais são os três requisitos para o armazenamento de informação por longo prazo? Explique.
+
+2. Explique o conceito de arquivo.
+
+3. Quais as diferenças entre arquivos de texto e binários? Explique.
+
+4. Cite e explique pelo menos 5 atributos de arquivos mantidos pelo S.O.
+
+5. Quais são as operações permitidas com arquivos? Explique.
+
+6. Quais são as operações permitidas com diretórios? Explique.
+
+7. Na aula foi discutido um exemplo de organização de um sistema de arquivos.
+
+8. Explique os elementos pertencentes a um sistema de arquivos.
+
+9. Explique as diferenças entre os seguintes métodos de implementação de arquivos: alocação contígua, alocação por lista encadeada, alocação por lista encadeada usando uma tabela em memória e i-nodes.
+
+10. Quais as diferenças entre os modos de operação r, w, a, r+, w+ e a+ ao abrir um arquivo no formato texto?
+
+11. Escreva um programa em C que leia um arquivo binário chamado "inteiros.bin" e imprima os dados na tela. Cada linha impressa na tela deverá conter o seguinte formato: "Item X: A=Y B=Z", onde X o número da linha (considere que a primeira linha começa com número zero), Y é o valor de a do registro e Z é o valor de b do registro. Considere que os elementos armazenados nesse arquivo são no formado de registro, como segue: struct {int a; int b;}
+
+12. Modifique o programa anterior para salvar os dados em um novo arquivo de texto chamado "inteiros-texto.txt".
+
+13. Faça uma função que busca um registro específico informado pelo usuário (valores de a e b) no arquivo "inteiros.bin" e o remove deste arquivo. Ao final da execução, o arquivo "inteiros.bin" não deverá mais conter o registro removido.

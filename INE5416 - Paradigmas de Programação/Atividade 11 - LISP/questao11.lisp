@@ -1,0 +1,12 @@
+(defun maximoDivisor (x y)
+    (cond
+        ((= y 0) x)
+        ((= x 0) y)
+        ((> x y) (maximoDivisor (mod x y) y))
+        (t (maximoDivisor x (mod y x)))
+    )
+)
+(defun main ()
+    (write-line (write-to-string (maximoDivisor 10 76)))  
+)
+(main)

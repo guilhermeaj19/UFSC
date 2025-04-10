@@ -1,0 +1,13 @@
+(define (formTriangle a b c)
+    (cond
+        ((and (< a (+ b c)) (< b (+ a c)) (< c (+ b a))) #t)
+        (else #f)
+    )
+)
+(define (main )
+    (write (formTriangle 10 5 3)) (newline)
+    (write (formTriangle 10 5 10)) (newline)
+    (write (formTriangle 5 5 9)) (newline)
+    (write (formTriangle 10 5 4)) (newline)
+)
+(main)

@@ -1,0 +1,7 @@
+(defun dist3d (x1 y1 z1 x2 y2 z2)
+    (sqrt (+ (* (- x2 x1) (- x2 x1)) (* (- y2 y1) (- y2 y1)) (* (- z2 z1) (- z2 z1))))
+)
+(defun main ()
+    (write-line (write-to-string (dist3d 1 -15 50 19 3 12)))
+)
+(main)

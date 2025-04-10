@@ -1,0 +1,13 @@
+(defun formTriangle (a b c)
+    (cond
+        ((and (< a (+ b c)) (< b (+ a c)) (< c (+ b a))) T)
+        (t NIL)
+    )
+)
+(defun main ()
+    (write-line (write-to-string (formTriangle 10 5 3)))
+    (write-line (write-to-string (formTriangle 10 5 10)))
+    (write-line (write-to-string (formTriangle 5 5 9)))
+    (write-line (write-to-string (formTriangle 10 5 4)))
+)
+(main)

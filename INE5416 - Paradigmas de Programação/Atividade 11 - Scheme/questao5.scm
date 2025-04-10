@@ -1,0 +1,11 @@
+(define (media a b c)
+    (cond
+        ((>= (/ (+ a b c) 3) 6) "Aprovado")
+        (else "Reprovado")
+    )
+)
+(define (main)
+    (write (media 5 10 5)) (newline)
+    (write (media 5 3 5)) (newline)
+)
+(main)

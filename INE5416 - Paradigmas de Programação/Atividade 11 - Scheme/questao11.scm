@@ -1,0 +1,12 @@
+(define (maximoDivisor x y)
+    (cond
+        ((= y 0) x)
+        ((= x 0) y)
+        ((> x y) (maximoDivisor (modulo x y) y))
+        (else (maximoDivisor x (modulo y x)))
+    )
+)
+(define (main)
+    (write (maximoDivisor 10 76))
+)  
+(main)

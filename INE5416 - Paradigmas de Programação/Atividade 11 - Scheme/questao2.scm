@@ -1,0 +1,16 @@
+(define (absolut x)
+    (cond
+        ((< x 0) (* -1 x))
+        (else x)
+    )
+)
+
+(define (main)
+    (write (absolut -5))
+    (newline)
+    (write (absolut 0))
+    (newline)
+    (write (absolut 124))
+    (newline)
+)
+(main)
