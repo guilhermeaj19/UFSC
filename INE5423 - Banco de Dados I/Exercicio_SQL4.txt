@@ -1,0 +1,37 @@
+-- 1
+SELECT medicos.nome, medicos.cpf
+FROM   medicos join pacientes on pacientes.cpf = medicos.cpf;
+
+-- 2
+SELECT funcionarios.nome, medicos.nome
+FROM   funcionarios JOIN medicos on funcionarios.cidade = medicos.cidade;
+    
+-- 3
+SELECT medicos.nome, medicos.idade
+FROM   pacientes JOIN consultas ON pacientes.codp = consultas.codp
+			     JOIN medicos   ON medicos.codm = consultas.codm
+WHERE  pacientes.nome = 'Ana';
+
+-- 4
+SELECT ambulatorios.nroa
+FROM   ambulatorios JOIN ambulatorios AS ambs ON ambs.nroa = 5 AND ambulatorios.andar = ambs.andar;
+
+-- 5
+SELECT DISTINCT codp, nome
+FROM   pacientes NATURAL JOIN consultas
+WHERE  hora > '14:00';
+
+-- 6
+SELECT nroa, andar
+FROM   ambulatorios NATURAL JOIN medicos 
+                    NATURAL JOIN consultas
+WHERE  data = '2020/10/12';
+
+-- 7
+SELECT ambulatorios.*, medicos.codm, medicos.nome
+FROM   ambulatorios LEFT join medicos on ambulatorios.nroa = medicos.nroa;
+
+-- 8
+SELECT medicos.cpf, medicos.nome AS nome_medico, pacientes.nome AS nome_paciente, consultas.data
+FROM   consultas JOIN pacientes ON consultas.codp = pacientes.codp
+                 RIGHT JOIN medicos   ON medicos.codm = consultas.codm;

@@ -1,0 +1,52 @@
+-- USO DE [NOT] IN
+-- 1
+SELECT nome
+FROM pacientes
+WHERE codp IN (SELECT codp 
+               FROM consultas 
+               WHERE hora > '14:00');
+               
+-- 2
+SELECT nome, idade
+FROM medicos
+WHERE codm in (SELECT codm
+               FROM consultas
+               WHERE codp in (SELECT codp
+                              FROM pacientes
+                              WHERE nome = 'Ana'));
+-- 3
+SELECT nroa, andar
+FROM ambulatorios
+WHERE nroa NOT IN (SELECT DISTINCT nroa
+                   FROM medicos
+                   WHERE nroa IS NOT NULL);
+
+-- USO DE SOME e/ou ALL
+-- 4
+SELECT cpf
+FROM medicos
+WHERE nroa = SOME(SELECT nroa
+                  FROM	ambulatorios
+                  WHERE andar = 1);
+
+-- 5
+SELECT nome, cpf
+FROM funcionarios
+WHERE salario < ALL(SELECT max(salario) as maior_salario
+                    FROM funcionarios);
+                   
+-- 6
+SELECT nome
+FROM pacientes
+WHERE codp = SOME(SELECT codp
+                  FROM consultas
+                  WHERE hora < ALL(select hora
+                                   FROM consultas
+                                   WHERE data = '2020/10/14'));
+
+-- 7
+SELECT nroa, andar
+FROM ambulatorios
+WHERE capacidade > ANY(SELECT capacidade
+                       FROM ambulatorios
+                       WHERE andar = 1);

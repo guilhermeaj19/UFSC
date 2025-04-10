@@ -1,0 +1,62 @@
+-- 1
+SELECT *
+from funcionarios
+ORDER BY salario DESC, idade
+limit 3;
+
+-- 2
+SELECT M.nome, A.andar, A.nroa
+FROM (select nome, nroa
+      FROM medicos) AS M JOIN (SELECT andar, nroa
+                               FROM ambulatorios) AS A ON M.nroa = A.nroa
+ORDER BY A.nroa;
+
+-- 3
+SELECT andar, SUM(capacidade)
+FROM ambulatorios
+GROUP BY andar;
+
+-- 4
+SELECT andar, AVG(capacidade)
+FROM ambulatorios
+GROUP BY andar
+HAVING AVG(capacidade) >= 40;
+
+-- 5
+SELECT M.nome, COUNT(C.codm)
+FROM (SELECT nome, codm
+      FROM medicos) AS M JOIN (SELECT codm
+                               FROM consultas) AS C ON M.codm = C.codm
+GROUP BY M.nome
+HAVING COUNT(C.codm) > 1;
+
+-- 6
+DELETE from ambulatorios AS A
+WHERE nroa NOT IN (SELECT nroa
+                  FROM medicos AS M
+                  WHERE nroa IS NOT NULL AND M.nroa = A.nroa);
+
+-- 7
+UPDATE medicos
+SET cidade = (SELECT cidade
+              FROM pacientes
+              WHERE nome = 'Paulo'),
+ 	idade = 2*(SELECT idade
+               FROM pacientes
+               WHERE nome = 'Ana')
+WHERE nome = 'Pedro';
+
+-- 8
+-- Medicos (codm, nome, idade, especialidade, CPF, cidade, nroa)
+INSERT INTO medicos
+	SELECT MX.max_codm+1 AS codm, F.nome, F.idade, M.especialidade, F.cpf, F.cidade, M.nroa
+    FROM (SELECT codf, nome, idade, cpf, cidade
+          FROM funcionarios
+          WHERE codf = 3) AS F NATURAL JOIN 
+         (SELECT codm, especialidade, nroa
+          FROM medicos
+          WHERE codm = 2) AS M NATURAL JOIN 
+         (SELECT MAX(codm) as max_codm
+          FROM medicos) AS MX
+  	WHERE M.codm = 2 AND F.codf = 3;
+

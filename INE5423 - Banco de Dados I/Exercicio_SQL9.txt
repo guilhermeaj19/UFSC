@@ -1,0 +1,68 @@
+-- 1
+CREATE VIEW FuncFloripa (codf, nome, cpf, idade) as
+	SELECT codffuncfloripa, nome, cpf, idade
+    FROM   funcionarios
+    where  cidade = 'Florianopolis';
+
+-- 2
+SELECT *
+FROM   funcfloripa;
+
+-- 3
+UPDATE funcfloripa
+SET idade = idade + 1;
+
+-- 4
+SELECT *
+FROM   funcfloripa;
+-- Funcionou!
+
+-- 5
+INSERT INTO funcfloripa (codf, nome, idade, CPF) values
+						(10, 'Rodrigo', 41, 22200022233);
+
+-- 6
+SELECT *
+FROM   funcfloripa;
+-- Não funcionou, pois a cidade ficará NULL!
+
+-- 7
+CREATE RULE insertFuncFloripa
+AS ON INSERT TO funcfloripa
+DO INSTEAD
+    INSERT INTO funcionarios (codf, nome, idade, CPF, cidade) VALUES 
+    						 (NEW.codf, NEW.nome, NEW.idade, NEW.cpf, 'Florianopolis');
+
+-- 8
+INSERT INTO funcfloripa (codf, nome, idade, CPF) values
+						(11, 'Raul', 53, 44400044433);
+
+-- 9
+SELECT *
+FROM   funcfloripa;
+-- Funcionou, pois agora a rule corrige a cidade para Florianopolis!
+
+-- 10
+CREATE VIEW MedAmb2 (codm, nome, idade, cpf, nroa) AS
+	SELECT codm, nome, idade, cpf, nroa
+    FROM medicos
+    WHERE nroa >= 2
+    WITH CHECK OPTION;
+ 
+-- 11
+SELECT *
+FROM MedAmb2;
+
+-- 12
+INSERT INTO medamb2 (codm, nome, idade, cpf, nroa) VALUES
+					(7, 'Soraia', 47, 55500055533, 2);
+
+-- 13
+SELECT *
+FROM MedAmb2;
+-- Funcionou, pois o nroa (2) está dentro do aceitável para visão
+
+-- 14
+INSERT INTO medamb2 (codm, nome, idade, cpf, nroa) VALUES
+					(8, 'Saulo', 52, 66600066633, 1);
+-- Não funcionou, pois a inserção violou o check option da visão, que é nroa >= 2;         

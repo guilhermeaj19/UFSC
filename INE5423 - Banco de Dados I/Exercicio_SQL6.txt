@@ -1,0 +1,67 @@
+-- Usando Subconsultas com EXISTS
+-- 1
+SELECT m.nome, m.cpf
+FROM medicos as m
+WHERE EXISTS (Select P.nome, P.cpf
+              FROM pacientes as P
+              WHERE P.cpf = M.cpf);
+
+-- 2
+SELECT M.nome, M.cpf, C.data
+FROM medicos AS M NATURAL JOIN (SELECT codp, codm, data 
+                                FROM consultas) AS C
+WHERE EXISTS (SELECT *
+              FROM pacientes AS P
+              WHERE c.codp = P.codp AND 
+              		M.codm = C.codm AND 
+              		M.especialidade = 'ortopedia' AND 
+              		P.nome = 'Ana');
+
+-- 3
+SELECT M.nome, M.cpf
+FROM Medicos as M
+WHERE NOT EXISTS (SELECT *
+                  FROM pacientes AS P
+                  WHERE NOT EXISTS (SELECT *
+                                    FROM consultas AS C
+                                    WHERE C.codm = M.codm AND 
+                                    	  P.codp = C.codp));
+                                    
+-- 4
+SELECT M.nome, M.cpf
+FROM medicos as M
+WHERE M.especialidade = 'ortopedia' AND 
+	  NOT EXISTS (SELECT *
+                  FROM pacientes AS P 
+                  WHERE P.cidade = 'Florianopolis' AND 
+                  		NOT EXISTS (SELECT *
+                                    FROM consultas AS C
+                                    WHERE C.codm = M.codm AND 
+                                    	  C.codp = P.codp));
+
+-- Usando Subconsultas em FROM
+-- 1
+SELECT data, hora
+FROM (SELECT codm
+      FROM medicos
+      WHERE nome = 'Maria') AS M JOIN (SELECT codm, data, hora
+                                  FROM consultas) AS C ON M.codm = C.codm;
+                                  
+-- 2
+SELECT P.nome, P.cidade
+FROM (SELECT codp, nome, cidade 
+      FROM pacientes) AS P
+      JOIN (SELECT DISTINCT codp
+            FROM (SELECT codp, codm 
+                  FROM consultas) AS C 
+            			JOIN (SELECT codm
+                              FROM medicos
+                              WHERe medicos.especialidade = 'ortopedia') AS M ON M.codm = C.codm) AS C1 ON C1.codp = P.codp;
+
+-- 3
+SELECT Med.nome, Med.cpf
+FROM (SELECT nroa
+      FROM Medicos AS M
+      WHERE nome = 'Pedro') AS MPedro JOIN (SELECT nome, cpf, nroa
+                                            FROM medicos) AS Med ON Med.nroa = MPedro.nroa;
+                                           	
